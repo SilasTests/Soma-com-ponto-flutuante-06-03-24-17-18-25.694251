@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="3" time="0.040" timestamp="2024-03-06T17:18:52.201213" hostname="fv-az1432-828"><testcase classname="test_file" name="test_case_0" time="0.002"><failure message="AssertionError: assert '4101' == '8.6'&#10;  &#10;  - 8.6&#10;  + 4101">def test_case_0():
+        input_data = "5.2 3.4"
+        expected_result = "8.6"
+        cast_type = type(expected_result)
+    
+        result = subprocess.run(
+            "./main",
+            input=input_data.encode(),
+            stdout=subprocess.PIPE,
+        )
+&gt;       assert cast_type(result.stdout.decode()) == expected_result
+E       AssertionError: assert '4101' == '8.6'
+E         
+E         - 8.6
+E         + 4101
+
+test_file.py:14: AssertionError</failure></testcase><testcase classname="test_file" name="test_case_1" time="0.001"><failure message="AssertionError: assert '4106' == '15.5'&#10;  &#10;  - 15.5&#10;  + 4106">def test_case_1():
+        input_data = "10.2 5.3"
+        expected_result = "15.5"
+        cast_type = type(expected_result)
+    
+        result = subprocess.run(
+            "./main",
+            input=input_data.encode(),
+            stdout=subprocess.PIPE,
+        )
+&gt;       assert cast_type(result.stdout.decode()) == expected_result
+E       AssertionError: assert '4106' == '15.5'
+E         
+E         - 15.5
+E         + 4106
+
+test_file.py:26: AssertionError</failure></testcase><testcase classname="test_file" name="test_case_2" time="0.001" /></testsuite></testsuites>
