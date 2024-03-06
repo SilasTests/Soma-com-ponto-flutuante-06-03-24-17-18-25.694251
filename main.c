@@ -7,12 +7,12 @@ double add(double a, double b) {
 int main() {
     double num1, num2, result;
 
-    scanf("%.1lf", &num1);
-    scanf("%.1lf", &num2);
+    scanf("%lf", &num1);
+    scanf("%lf", &num2);
 
     result = add(num1, num2);
 
-    printf("%lf", result);
+    printf("%.1lf", result);
 
     return 0;
 }
