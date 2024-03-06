@@ -1,36 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="3" skipped="0" tests="3" time="0.043" timestamp="2024-03-06T17:25:03.385668" hostname="fv-az883-364"><testcase classname="test_file" name="test_case_0" time="0.002"><failure message="AssertionError: assert '0.000000' == '8.6'&#10;  &#10;  - 8.6&#10;  + 0.000000">def test_case_0():
-        input_data = "5.2 3.4"
-        expected_result = "8.6"
-        cast_type = type(expected_result)
-    
-        result = subprocess.run(
-            "./main",
-            input=input_data.encode(),
-            stdout=subprocess.PIPE,
-        )
-&gt;       assert cast_type(result.stdout.decode()) == expected_result
-E       AssertionError: assert '0.000000' == '8.6'
-E         
-E         - 8.6
-E         + 0.000000
-
-test_file.py:14: AssertionError</failure></testcase><testcase classname="test_file" name="test_case_1" time="0.001"><failure message="AssertionError: assert '0.000000' == '15.5'&#10;  &#10;  - 15.5&#10;  + 0.000000">def test_case_1():
-        input_data = "10.2 5.3"
-        expected_result = "15.5"
-        cast_type = type(expected_result)
-    
-        result = subprocess.run(
-            "./main",
-            input=input_data.encode(),
-            stdout=subprocess.PIPE,
-        )
-&gt;       assert cast_type(result.stdout.decode()) == expected_result
-E       AssertionError: assert '0.000000' == '15.5'
-E         
-E         - 15.5
-E         + 0.000000
-
-test_file.py:26: AssertionError</failure></testcase><testcase classname="test_file" name="test_case_2" time="0.001"><failure message="AssertionError: assert '0.000000' == '0'&#10;  &#10;  - 0&#10;  + 0.000000">def test_case_2():
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="3" time="0.040" timestamp="2024-03-06T17:25:40.232275" hostname="fv-az1113-115"><testcase classname="test_file" name="test_case_0" time="0.001" /><testcase classname="test_file" name="test_case_1" time="0.001" /><testcase classname="test_file" name="test_case_2" time="0.001"><failure message="AssertionError: assert '0.0' == '0'&#10;  &#10;  - 0&#10;  + 0.0">def test_case_2():
         input_data = "0 0"
         expected_result = "0"
         cast_type = type(expected_result)
@@ -41,9 +9,9 @@ test_file.py:26: AssertionError</failure></testcase><testcase classname="test_fi
             stdout=subprocess.PIPE,
         )
 &gt;       assert cast_type(result.stdout.decode()) == expected_result
-E       AssertionError: assert '0.000000' == '0'
+E       AssertionError: assert '0.0' == '0'
 E         
 E         - 0
-E         + 0.000000
+E         + 0.0
 
 test_file.py:38: AssertionError</failure></testcase></testsuite></testsuites>
