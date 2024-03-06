@@ -1,17 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="3" time="0.040" timestamp="2024-03-06T17:25:40.232275" hostname="fv-az1113-115"><testcase classname="test_file" name="test_case_0" time="0.001" /><testcase classname="test_file" name="test_case_1" time="0.001" /><testcase classname="test_file" name="test_case_2" time="0.001"><failure message="AssertionError: assert '0.0' == '0'&#10;  &#10;  - 0&#10;  + 0.0">def test_case_2():
-        input_data = "0 0"
-        expected_result = "0"
-        cast_type = type(expected_result)
-    
-        result = subprocess.run(
-            "./main",
-            input=input_data.encode(),
-            stdout=subprocess.PIPE,
-        )
-&gt;       assert cast_type(result.stdout.decode()) == expected_result
-E       AssertionError: assert '0.0' == '0'
-E         
-E         - 0
-E         + 0.0
-
-test_file.py:38: AssertionError</failure></testcase></testsuite></testsuites>
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="3" time="0.024" timestamp="2024-03-06T17:35:12.754348" hostname="fv-az914-153"><testcase classname="test_file" name="test_case_0" time="0.001" /><testcase classname="test_file" name="test_case_1" time="0.001" /><testcase classname="test_file" name="test_case_2" time="0.001"><failure message="AssertionError: assert '0.0' == '0'&#10;  &#10;  - 0&#10;  + 0.0">E   AssertionError: assert '0.0' == '0'
+      
+      - 0
+      + 0.0</failure></testcase></testsuite></testsuites>
