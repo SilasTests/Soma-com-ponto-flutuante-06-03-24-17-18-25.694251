@@ -1,18 +1,18 @@
 #include <stdio.h>
 
-int add(int a, int b) {
+double add(double a, double b) {
     return a + b;
 }
 
 int main() {
-    int num1, num2, result;
+    double num1, num2, result;
 
-    scanf("%d", &num1);
-    scanf("%d", &num2);
+    scanf("%lf", &num1);
+    scanf("%lf", &num2);
 
     result = add(num1, num2);
 
-    printf("%d", result);
+    printf("%lf", result);
 
     return 0;
 }
