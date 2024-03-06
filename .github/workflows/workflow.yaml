@@ -28,7 +28,7 @@ jobs:
         
       - name: Rodar testes com pytest
         continue-on-error: true
-        run: pytest --junitxml=results.xml --xdist --nodefaults --tb=no .
+        run: pytest --junitxml=results.xml .
     
       - uses: actions/upload-artifact@v3
         with:
