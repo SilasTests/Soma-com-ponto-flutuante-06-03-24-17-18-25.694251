@@ -11,8 +11,11 @@ int main() {
     scanf("%lf", &num2);
 
     result = add(num1, num2);
-
-    printf("%.1lf", result);
+    if(result == 0){
+        printf("%lf", result);
+    }else{
+        printf("%.1lf", result);
+    }
 
     return 0;
 }
