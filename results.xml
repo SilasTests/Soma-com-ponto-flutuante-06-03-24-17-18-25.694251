@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="3" time="0.041" timestamp="2024-03-06T17:43:25.737624" hostname="fv-az973-634"><testcase classname="test_file" name="test_case_0" time="0.001" /><testcase classname="test_file" name="test_case_1" time="0.001" /><testcase classname="test_file" name="test_case_2" time="0.001"><failure message="AssertionError: assert '0.0' == '0'&#10;  &#10;  - 0&#10;  + 0.0">def test_case_2():
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="3" time="0.040" timestamp="2024-03-11T18:56:27.556917" hostname="fv-az1530-811"><testcase classname="test_file" name="test_case_0" time="0.002" /><testcase classname="test_file" name="test_case_1" time="0.001" /><testcase classname="test_file" name="test_case_2" time="0.001"><failure message="AssertionError: assert '0.000000' == '0'&#10;  &#10;  - 0&#10;  + 0.000000">def test_case_2():
         input_data = "0 0"
         expected_result = "0"
         cast_type = type(expected_result)
@@ -9,9 +9,9 @@
             stdout=subprocess.PIPE,
         )
 &gt;       assert cast_type(result.stdout.decode()) == expected_result
-E       AssertionError: assert '0.0' == '0'
+E       AssertionError: assert '0.000000' == '0'
 E         
 E         - 0
-E         + 0.0
+E         + 0.000000
 
 test_file.py:38: AssertionError</failure></testcase></testsuite></testsuites>
